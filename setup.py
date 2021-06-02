@@ -5,7 +5,7 @@ with open("ReadMe.md", 'r') as f:
     long_description = f.read()
 
 setup(
-    name='word_geni.py',
+    name='word_gena.py',
     version='1.0',
     author='Cherloy',
     author_email='sideswipe8@mail.ru',
