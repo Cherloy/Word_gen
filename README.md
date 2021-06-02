@@ -4,10 +4,11 @@
 #### You can specify a clear length of the generated text and the path where the generated file will be saved.
 ***
 ## Installing
-pip install word_gen
+pip install word-gener
 ## How to use
 ```python
-from word_gen.word_gen import word
+import word_gen.word_gen
+from word_gen.word_gen import *
 
 random_drawing() #This function generates a random picture from geometric shapes
 get_table() #This function generates a random fixed-sized table of numbers
