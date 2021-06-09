@@ -118,7 +118,7 @@ def random_string(length: int):
     file.close()
     if length < 0:
         length=0
-
+    return length
 def generate_random_string(length):
     """
     This function generates a random set of letters of a given length
@@ -141,4 +141,3 @@ def generate_random_string(length):
     doc.add_paragraph(data)
     doc.save('test2.docx')
     file.close()
-    return length

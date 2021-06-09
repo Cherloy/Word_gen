@@ -1,5 +1,5 @@
 import unittest
-from word_gen import random_string
+from word_generation.word_gen.word_gen import random_string
 
 class TestWord_gen(unittest.TestCase):
     def test_string_negative(self):
