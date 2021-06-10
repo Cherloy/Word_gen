@@ -50,10 +50,6 @@ def get_table():
     file = open("test1.txt", "w")
     file.close()
 
-    def get_string():
-        random_size = random.randint(5, 5)
-        return [[0 for _ in range(random_size)] for _ in range(random_size)]
-
     my_array = np.random.rand(10, 4)
     np.savetxt('test1.txt', my_array, fmt='%4.6f', delimiter=' ')
     with open('test1.txt') as infile, open('test1.csv', 'w') as outfile:
@@ -141,3 +137,5 @@ def generate_random_string(length):
     doc.add_paragraph(data)
     doc.save('test2.docx')
     file.close()
+
+
