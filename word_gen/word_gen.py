@@ -14,7 +14,7 @@ class Word:
     files = []
     trash_files = []
 
-    def  random_drawing(self, shapes:list):
+    def  random_drawing(shapes:list):
         """
         This function generates a random picture from geometric shapes
         """
@@ -45,7 +45,7 @@ class Word:
         Word.files.append('test.docx')
         Word.trash_files.append('Image.jpg')
 
-    def get_table(self):
+    def get_table():
         """
         This function generates a random fixed-sized table of numbers
         :return:
@@ -82,7 +82,7 @@ class Word:
         Word.trash_files.append('test1.txt')
         Word.trash_files.append('test1.csv')
 
-    def merge(self, path:str):
+    def merge(path:str):
         """
         This function combines several word files into one single file at the specified path. Possibly can be used as a standalone helper library or smth idk ¯\_(ツ)_/¯
         :param path: selected save path
@@ -95,7 +95,7 @@ class Word:
         composer.save(path)
         print('Merged file just saved to ', path, '!')
 
-    def trash_clean(self):
+    def trash_clean():
         """
         This function cleans up intermediate files. In fact, they can remove this program too
         """
@@ -103,7 +103,7 @@ class Word:
         for f in Word.irl_trash:
             os.remove(f)
 
-    def random_string(self, len: int):
+    def random_string(len: int):
         """
         This function generates a random set of letters of a given length
         :param length: length- number of letters of random text
@@ -127,3 +127,4 @@ class Word:
         Word.files.append("test2.docx")
         Word.trash_files.append('test.txt')
         return length
+Word.get_table()
