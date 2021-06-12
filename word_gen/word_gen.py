@@ -127,4 +127,3 @@ class Word:
         Word.files.append("test2.docx")
         Word.trash_files.append('test.txt')
         return length
-Word.get_table()
