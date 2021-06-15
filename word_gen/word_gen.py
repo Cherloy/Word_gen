@@ -58,6 +58,7 @@ class Word:
             for line in infile:
                 outfile.write(line.replace(' ', ','))
         doc = docx.Document()
+        file.close()
 
         with open('test1.csv', newline='') as f:
             csv_reader = csv.reader(f)
